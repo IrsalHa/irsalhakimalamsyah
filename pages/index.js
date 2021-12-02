@@ -47,34 +47,34 @@ export default function Home() {
       <meta property="twitter:description" content="Hi ! my name is Irsal Hakim Alamsyah"/>
       <meta property="twitter:image" content="https://cdn.statically.io/og/Hello%20!%20my%20name%20is%20Irsal%20Hakim%20Alamsyah.jpg"></meta>
     </Head>
-    <section class="bg-white dark:bg-gray-800">
-        <div class="container px-6 py-8 mx-auto">
+    <section className="bg-white dark:bg-gray-800">
+        <div className="container px-6 py-8 mx-auto">
           
-            <div class="flex items-center flex-col justify-center">
-            <div class="mt-8 lg:mt-0 lg:w-1/2">
-                    <div class="flex items-center justify-center">
-                        <div class="max-w-lg">
-                            <img class="object-cover object-center w-full h-64 rounded-md shadow" src="https://avatars.githubusercontent.com/u/45132491" alt=""/>
+            <div className="flex items-center flex-col justify-center">
+            <div className="mt-8 lg:mt-0 lg:w-1/2">
+                    <div className="flex items-center justify-center">
+                        <div className="max-w-lg">
+                            <img className="object-cover object-center w-full h-64 rounded-md shadow" src="https://avatars.githubusercontent.com/u/45132491" alt=""/>
                         </div>
                     </div>
                 </div>
-                <div class="lg:w-1/2 text-center">
-                    <h1 class="text-3xl text-center font-bold text-gray-800 dark:text-gray-100">Irsal Hakim Alamsyah</h1>
+                <div className="lg:w-1/2 text-center">
+                    <h1 className="text-3xl text-center font-bold text-gray-800 dark:text-gray-100">Irsal Hakim Alamsyah</h1>
 
-                    <p class="mt-4 text-center text-gray-500 dark:text-gray-400">
-                        Welcome to my personal website ! My name is Irsal Hakim Alamsyah Web Developer and Founder of <a class="px-1 py-1 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80" href="https://www.socialhattori.com">Social Hattori </a> 
+                    <p className="mt-4 text-center text-gray-500 dark:text-gray-400">
+                        Welcome to my personal website ! My name is Irsal Hakim Alamsyah Web Developer and Founder of <a className="px-1 py-1 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80" href="https://www.socialhattori.com">Social Hattori </a> 
                     </p>
 
-                    <div class="flex justify-center mt-6 -mx-2">
-                        <a class="mx-2" href="https://twitter.com/irsalha" aria-label="Twitter @irsalha">
+                    <div className="flex justify-center mt-6 -mx-2">
+                        <a className="mx-2" href="https://twitter.com/irsalha" aria-label="Twitter @irsalha">
                             Twitter @irsalha
                         </a>
                     
-                        <a class="mx-2 text-center" href="https://id.linkedin.com/in/irsalha" aria-label="Linkedin @irsalha">
+                        <a className="mx-2 text-center" href="https://id.linkedin.com/in/irsalha" aria-label="Linkedin @irsalha">
                         Linkedin @irsalha
                         </a>
                     
-                        <a class="mx-2 text-center" href="https://github.com/IrsalHa" aria-label="Github @irsalha">
+                        <a className="mx-2 text-center" href="https://github.com/IrsalHa" aria-label="Github @irsalha">
                         Github @irsalha
                         </a>
                     </div>
@@ -85,15 +85,15 @@ export default function Home() {
         </div>
     </section>
 
-    <section class="relative w-full max-w-md px-5 py-4 mx-auto rounded-md">
-            <div class="relative">
+    <section className="relative w-full max-w-md px-5 py-4 mx-auto rounded-md">
+            <div className="relative">
                 <p className="text-3xl text-center font-bold text-gray-800 dark:text-gray-100">Skill & Technology</p>
             </div>
 
-            <div class="inset-x-0 px-6 py-3 mx-5 mt-4 overflow-y-auto bg-white border border-gray-300 rounded-md max-h-72 dark:bg-gray-800 dark:border-transparent">
+            <div className="inset-x-0 px-6 py-3 mx-5 mt-4 overflow-y-auto bg-white border border-gray-300 rounded-md max-h-72 dark:bg-gray-800 dark:border-transparent">
                 {skill.map(function(value,index) {
-                 return ( <a key={index} class="block py-1">
-                    <h3 class="font-medium text-gray-700 dark:text-gray-100 hover:underline">{value}</h3>
+                 return ( <a key={index} className="block py-1">
+                    <h3 className="font-medium text-gray-700 dark:text-gray-100 hover:underline">{value}</h3>
                 </a>
                  )
                 })}
@@ -101,15 +101,15 @@ export default function Home() {
             </div>
     </section>
 
-    <section class="relative w-full max-w-md px-5 py-4 mx-auto rounded-md">
-            <div class="relative">
+    <section className="relative w-full max-w-md px-5 py-4 mx-auto rounded-md">
+            <div className="relative">
                 <p className="text-3xl text-center font-bold text-gray-800 dark:text-gray-100">Certificate</p>
             </div>
 
-            <div class=" inset-x-0 px-6 py-3 mx-5 mt-4 overflow-y-auto bg-white border border-gray-300 rounded-md max-h-72 dark:bg-gray-800 dark:border-transparent">
+            <div className=" inset-x-0 px-6 py-3 mx-5 mt-4 overflow-y-auto bg-white border border-gray-300 rounded-md max-h-72 dark:bg-gray-800 dark:border-transparent">
                 {certificate.map(function(value,index) {
-                 return ( <a key={index} class="block py-1">
-                    <h3 class="font-medium text-gray-700 dark:text-gray-100 hover:underline">{value}</h3>
+                 return ( <a key={index} className="block py-1">
+                    <h3 className="font-medium text-gray-700 dark:text-gray-100 hover:underline">{value}</h3>
                 </a>
                  )
                 })}

@@ -1,6 +1,4 @@
-
 import fs from "fs";
-
 
 export default function sitemap(){
 
@@ -15,7 +13,7 @@ export async function getServerSideProps({res}) {
   const staticPages = fs
     .readdirSync({
         development: 'pages',
-        production: './',
+        production: './.next/server/pages',
     }[process.env.NODE_ENV])
     .filter((staticPage) => {
       return ![
@@ -29,7 +27,7 @@ export async function getServerSideProps({res}) {
     .map((staticPagePath) => {
       return `${baseUrl}/${staticPagePath}`;
     });
-
+    console.log(staticPages)
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       ${staticPages

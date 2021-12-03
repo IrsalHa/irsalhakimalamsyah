@@ -29,6 +29,7 @@ export default function Home() {
     <Head>
       <meta charset="UTF-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="google-site-verification" content="LYAwt6I0Q0g63DXDnlHJEY6ayQ7Q0-BcPU5p2uZIvkg" />
       <link rel="icon" type="image/png" href="/favicon.png"/>
       <title>Irsal Hakim Alamsyah</title>
       <meta name="description" content="Hi ! my name is Irsal Hakim Alamsyah"></meta>

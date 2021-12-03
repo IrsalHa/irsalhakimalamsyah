@@ -21,12 +21,14 @@ export async function getServerSideProps({res}) {
         "_document.js",
         "_error.js",
         "sitemap.xml.js",
-        "api"
+        "api",
+        "404.html"
       ].includes(staticPage);
     })
     .map((staticPagePath) => {
       return `${baseUrl}/${staticPagePath}`;
     });
+    staticPages.push(baseUrl)
     console.log(staticPages)
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

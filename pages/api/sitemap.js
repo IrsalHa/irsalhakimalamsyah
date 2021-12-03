@@ -3,7 +3,10 @@ export default function handler(req, res)  {
     const baseUrl = "https://www.irsalhakimalamsyah.com";
   
     const staticPages = fs
-      .readdirSync("pages")
+      .readdirSync({
+        development: 'pages',
+        production: './',
+      }[process.env.NODE_ENV])
       .filter((staticPage) => {
         return ![
           "_app.js",

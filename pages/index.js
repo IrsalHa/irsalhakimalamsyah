@@ -78,6 +78,10 @@ export default function Home() {
                         <a className="mx-2 text-center" href="https://github.com/IrsalHa" aria-label="Github @irsalha">
                         Github @irsalha
                         </a>
+
+                        <a className="mx-2 text-center" href="https://blog.irsalhakimalamsyah.com/" aria-label="Github @irsalha">
+                            Blog
+                        </a>
                     </div>
                 </div>
 
